@@ -1,17 +1,26 @@
-package org.devathon.contest2016;
+package org.devathon.contest2k16;
 
-import org.bukkit.plugin.java.JavaPlugin;
+import org.bukkit.*
 
-public class DevathonPlugin extends JavaPlugin {
-
-    @Override
-    public void onEnable() {
-        // put your enable code here
+public class DevathonPlugin extends JavaPlugin, implements Player {
+    
+    public static void _OnEnable (  )
+    {
+        new Thread ( () -> {
+                Bukkit
+                .getServer()
+                .getServer()
+                .getServer()
+                .getServer()
+                .broadcastMessage("I jus won Dev A Thon sozm for late xD");
+        }
+        )
+        ;
+    
     }
-
-    @Override
-    public void onDisable() {
-        // put your disable code here
+    
+    public static void _OnDisable (  )
+    {
+        Bukkit.getLogger().info("HEllo World: )");
     }
 }
-
